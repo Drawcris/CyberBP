@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Trips
+build_property.RootNamespace = Trips
+build_property.ProjectDir = C:\Users\kacper\Desktop\Studia semestr 6\Wycieczki\Trips\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\kacper\Desktop\Studia semestr 6\Wycieczki\Trips
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Reservations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Reservations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Reservations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Reservations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Reservations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Trips/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Trips/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Trips/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Trips/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Trips/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJpcHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kacper/Desktop/Studia semestr 6/Wycieczki/Trips/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-cjcoafs62k

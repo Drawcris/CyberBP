@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TripsS.ViewModel.TripViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="h3 mb-4 text-gray-800">Wycieczki</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create"><i class="fas fa-plus-circle"></i> Dodaj nową</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Miejsce wyjazdu</th>
+                <th>Miejsce docelowe</th>
+                <th>Start wycieczki</th>
+                <th>Koniec wycieczki</th>
+                <th>Cena</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th>Akcje</th>
+                }
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.From</td>
+                    <td>@item.To</td>
+                    <td>@item.StartTrip.ToShortDateString()</td>
+                    <td>@item.EndTrip.ToShortDateString()</td>
+                    <td>@item.Price</td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.IdTrip"><i class="fas fa-edit"></i> Edytuj</a>
+                            <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.IdTrip"><i class="fas fa-info-circle"></i> Szczegóły</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.IdTrip"><i class="fas fa-trash-alt"></i> Usuń</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
