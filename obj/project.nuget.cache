@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J+2ulJg8NW7SAxg/mpjXjeCzgNKeOy0HwsrcC5rkhAV/1BvRVtEFSUR9omqV8k6vSs+/qQVkA7EFEaahaCwa9w==",
+  "dgSpecHash": "E6Sb3UFLxb+mSmqHaLE2YmrL0rAB599njq8WiN0l0o5WDrLtid8qd7HcRtLjYA/Hk4zicy+d09inHmeBsIJR7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\TripsS.csproj",
+  "projectFilePath": "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\TripsS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sirwo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\sirwo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

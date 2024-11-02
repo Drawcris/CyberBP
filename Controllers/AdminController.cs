@@ -141,9 +141,62 @@ public async Task<IActionResult> Edit(string userId)
         return RedirectToAction("Index");
     }
 
+    // POST: Admin/BlockUser
+    [HttpPost]
+    public async Task<IActionResult> BlockUser(string userId)
+    {
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user == null)
+        {
+            return NotFound();
+        }
 
-// GET: Admin/ManageRoles/userId
-public async Task<IActionResult> ManageRoles(string userId)
+        user.LockoutEnd = DateTimeOffset.MaxValue;
+        var result = await _userManager.UpdateAsync(user);
+
+        if (result.Succeeded)
+        {
+            return RedirectToAction("Index");
+        }
+
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(string.Empty, error.Description);
+        }
+
+        return View("Error");
+    }
+
+    // POST: Admin/UnlockUser
+    [HttpPost]
+    public async Task<IActionResult> UnlockUser(string userId)
+    {
+        var user = await _userManager.FindByIdAsync(userId);
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        user.LockoutEnd = DateTime.Now;
+        var result = await _userManager.UpdateAsync(user);
+
+        if (result.Succeeded)
+        {
+            return RedirectToAction("Index");
+        }
+
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(string.Empty, error.Description);
+        }
+
+        return View("Error");
+    }
+
+
+
+    // GET: Admin/ManageRoles/userId
+    public async Task<IActionResult> ManageRoles(string userId)
     {
         var user = await _userManager.FindByIdAsync(userId);
         if (user == null)
@@ -189,5 +242,87 @@ public async Task<IActionResult> ManageRoles(string userId)
         }
 
         return RedirectToAction("Index");
+    }
+
+    // GET: Account/ChangePassword
+    public IActionResult ChangePassword()
+    {
+        return View();
+    }
+
+    // POST: Account/ChangePassword
+    //[HttpPost]
+    //public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+    //{
+    //    if (!ModelState.IsValid)
+    //    {
+    //        return View(model);
+    //    }
+
+    //    var user = await _userManager.GetUserAsync(User);
+    //    if (user == null)
+    //    {
+    //        return RedirectToAction("Login");
+    //    }
+
+    //    var result = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+    //    if (result.Succeeded)
+    //    {
+    //        user.PasswordExpirationDate = DateTime.UtcNow.AddDays(90);
+    //        user.LastPasswordChangeDate = DateTime.UtcNow;
+    //        await _userManager.UpdateAsync(user);
+    //        return RedirectToAction("Index", "Home");
+    //    }
+
+    //    foreach (var error in result.Errors)
+    //    {
+    //        ModelState.AddModelError(string.Empty, error.Description);
+    //    }
+
+    //    return View(model);
+    //}
+
+    //// GET: Account/ResetPassword
+    //public IActionResult ResetPassword(string code = null)
+    //{
+    //    return code == null ? View("Error") : View(new ResetPasswordViewModel { Code = code });
+    //}
+
+    //// POST: Account/ResetPassword
+    //[HttpPost]
+    //public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+    //{
+    //    if (!ModelState.IsValid)
+    //    {
+    //        return View(model);
+    //    }
+
+    //    var user = await _userManager.FindByEmailAsync(model.Email);
+    //    if (user == null)
+    //    {
+    //        return RedirectToAction("ResetPasswordConfirmation");
+    //    }
+
+    //    var result = await _userManager.ResetPasswordAsync(user, model.Code, model.Password);
+    //    if (result.Succeeded)
+    //    {
+    //        user.PasswordExpirationDate = DateTime.UtcNow.AddDays(90);
+    //        user.LastPasswordChangeDate = DateTime.UtcNow;
+    //        await _userManager.UpdateAsync(user);
+    //        return RedirectToAction("ResetPasswordConfirmation");
+    //    }
+
+    //    foreach (var error in result.Errors)
+    //    {
+    //        ModelState.AddModelError(string.Empty, error.Description);
+    //    }
+
+    //    return View(model);
+    //}
+
+    // GET: Account/ResetPasswordConfirmation
+    public IActionResult ResetPasswordConfirmation()
+    {
+        return View();
     }
 }

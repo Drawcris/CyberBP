@@ -105,6 +105,13 @@ static void CreateDbIfNotExists(IHost host)
     }
     
 }
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Default Password settings.
+    options.Password.RequireLowercase = true;
+    options.Password.RequireDigit = true;
+});
+
 
 using (var scope = app.Services.CreateScope())
 {

@@ -33,6 +33,15 @@
                                 <input type="hidden" name="userId" value="@user.Id" />
                                 <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>
+                                <form asp-action="BlockUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="userId" value="@user.Id" />
+                                    <button type="submit" class="btn btn-danger">Block</button>
+                                </form>
+                                <form asp-action="UnlockUser" method="post" style="display:inline;">
+                                    <input type="hidden" name="userId" value="@user.Id" />
+                                    <button type="submit" class="btn btn-danger">Unlock</button>
+                                </form>
+                                
                             </td>
                             <td>
                                 <a href="@Url.Action("ManageRoles", new { userId = user.Id })" class="btn btn-primary btn-sm">Manage Roles</a>

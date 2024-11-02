@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\TripsS.csproj": {}
+    "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\TripsS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\TripsS.csproj": {
+    "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\TripsS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\TripsS.csproj",
+        "projectUniqueName": "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\TripsS.csproj",
         "projectName": "TripsS",
-        "projectPath": "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\TripsS.csproj",
+        "projectPath": "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\TripsS.csproj",
         "packagesPath": "C:\\Users\\sirwo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sirwo\\Downloads\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Wycieczki-PanelAdmina2\\Trips\\obj\\",
+        "outputPath": "C:\\Users\\sirwo\\Source\\Repos\\Drawcris\\CyberBP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sirwo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -111,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
