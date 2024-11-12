@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using TripsS.Models;
 
 namespace TripsS.Areas.Identity.Pages.Account
 {
@@ -21,11 +23,14 @@ namespace TripsS.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly Trips.TripContext _context;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger, Trips.TripContext context)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
+
         }
 
         /// <summary>
@@ -101,8 +106,21 @@ namespace TripsS.Areas.Identity.Pages.Account
             ReturnUrl = returnUrl;
         }
 
+        private async Task LogActivity(string userName, string actionDescription)
+        {
+            var activity = new UserActivity
+            {
+                UserName = userName,
+                ActionDate = DateTime.Now,
+                ActionDescription = actionDescription
+            };
+            _context.UserActivities.Add(activity);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+
             returnUrl ??= Url.Content("~/");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -114,7 +132,7 @@ namespace TripsS.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
+                    await LogActivity(Input.Email, "User logged in");
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

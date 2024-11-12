@@ -28,11 +28,20 @@ namespace Trips.Controllers
         private readonly IClientService _clientServices;
         private readonly IValidator<ClientViewModel> _clientValidator;
         private readonly IMapper _mapper;
-        public ClientsController(IClientService clientRepository, IValidator<ClientViewModel> clientValidator , IMapper mapper)
+        private readonly TripContext _context;
+        public ClientsController(IClientService clientRepository, IValidator<ClientViewModel> clientValidator , IMapper mapper, TripContext context)
         {
             this._clientServices = clientRepository;
             _clientValidator = clientValidator;
             _mapper = mapper;
+            _context = context;
+
+        }
+
+        public async Task<IActionResult> UserActivities()
+        {
+            var activities = await _context.UserActivities.ToListAsync();
+            return View(activities);
         }
 
         public async Task<IActionResult> Index()

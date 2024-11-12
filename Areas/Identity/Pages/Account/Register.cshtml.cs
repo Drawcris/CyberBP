@@ -17,7 +17,11 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using SQLitePCL;
+using Trips;
+using TripsS.Models;
 
 namespace TripsS.Areas.Identity.Pages.Account
 {
@@ -28,6 +32,7 @@ namespace TripsS.Areas.Identity.Pages.Account
         private readonly IUserStore<IdentityUser> _userStore;
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
+        private readonly TripContext _context;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
@@ -35,8 +40,10 @@ namespace TripsS.Areas.Identity.Pages.Account
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            TripContext context)
         {
+             _context = context;
             _userManager = userManager;
             _userStore = userStore;
             _emailStore = GetEmailStore();
@@ -106,6 +113,18 @@ namespace TripsS.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
+        private async Task LogActivity(string userName, string actionDescription)
+        {
+            var activity = new UserActivity
+            {
+                UserName = userName,
+                ActionDate = DateTime.Now,
+                ActionDescription = actionDescription
+            };
+            _context.UserActivities.Add(activity);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
@@ -121,6 +140,7 @@ namespace TripsS.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+                    await LogActivity(Input.Email, "User registered");
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
