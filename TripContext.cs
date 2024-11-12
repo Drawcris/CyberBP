@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Trips.Models;
+using TripsS.Models;
 
 namespace Trips;
 
@@ -10,6 +11,8 @@ public class TripContext : IdentityDbContext<IdentityUser>
     public DbSet<Trip> Trips { get; set; }
     public DbSet<Client> Clients { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<UserActivity> UserActivities { get; set; }
+
     public TripContext(DbContextOptions<TripContext> options) : base(options)
     {
     }
