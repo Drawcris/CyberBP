@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TripsS.Models.UserActivity>
+
+@{
+    ViewData["Title"] = "User Activities";
+}
+
+<h1>User Activities</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Action Date</th>
+            <th>Action Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var activity in Model)
+        {
+            <tr>
+                <td>@activity.UserName</td>
+                <td>@activity.ActionDate</td>
+                <td>@activity.ActionDescription</td>
+            </tr>
+        }
+    </tbody>
+</table>

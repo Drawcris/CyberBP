@@ -1,0 +1,20 @@
+﻿
+
+
+
+<h1>Witaj w aplikacji Wycieczki!</h1>
+
+<h2>
+    Lista Studentów:
+
+    <a asp-controller="Home" asp-action="Studenci"> Pokaż szczegóły</a>
+</h2>
+@foreach (var student in Model)
+{
+    <div>
+        <h4>@student.FirstName @student.LastName</h4>
+
+    </div>
+}
+
+
