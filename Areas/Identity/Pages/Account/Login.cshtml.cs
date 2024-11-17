@@ -135,6 +135,7 @@ namespace TripsS.Areas.Identity.Pages.Account
                 // Jeśli logowanie zakończyło się sukcesem
                 if (result.Succeeded)
                 {
+                    await LogActivity(Input.Email, "User logged in");
                     var user = await _userManager.FindByEmailAsync(Input.Email);
 
                     if (user != null)
@@ -150,7 +151,9 @@ namespace TripsS.Areas.Identity.Pages.Account
                         }
 
                         // W przeciwnym razie przekieruj na stronę docelową (ReturnUrl)
+                        
                         return LocalRedirect(returnUrl);
+                        
                     }
 
                 }

@@ -62,7 +62,7 @@ public class AdminController : Controller
     {
         if (ModelState.IsValid)
         {
-            var user = new ApplicationUser { UserName = model.Email, Email = model.Email, EmailConfirmed = true };
+            var user = new ApplicationUser { UserName = model.Email, Email = model.Email, EmailConfirmed = true, MustChangePassword = true };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
