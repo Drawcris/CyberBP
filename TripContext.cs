@@ -6,7 +6,7 @@ using TripsS.Models;
 
 namespace Trips;
 
-public class TripContext : IdentityDbContext<IdentityUser>
+public class TripContext : IdentityDbContext<ApplicationUser>
 {
     public DbSet<Trip> Trips { get; set; }
     public DbSet<Client> Clients { get; set; }

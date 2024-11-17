@@ -12,12 +12,12 @@ using TripsS.Models;
 [Authorize(Roles = "Admin")]
 public class AdminController : Controller
 {
-    private readonly UserManager<IdentityUser> _userManager;
+    private readonly UserManager<ApplicationUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly TripContext _context;
 
 
-    public AdminController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, TripContext context)
+    public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, TripContext context)
     {
         _userManager = userManager;
         _context = context;
@@ -62,7 +62,7 @@ public class AdminController : Controller
     {
         if (ModelState.IsValid)
         {
-            var user = new IdentityUser { UserName = model.Email, Email = model.Email, EmailConfirmed = true };
+            var user = new ApplicationUser { UserName = model.Email, Email = model.Email, EmailConfirmed = true };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {

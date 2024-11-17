@@ -10,8 +10,7 @@ using TripsS.Validator;
 using FluentValidation;
 using TripsS.AutoMapper;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-
+using TripsS.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,40 +18,58 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<TripContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MvcWycieczkiContext")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<TripContext>();
+// Add Identity with custom ApplicationUser and Role support
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.SignIn.RequireConfirmedEmail = false;
+    // Configure password settings
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = false; // Change if required
+    options.Password.RequiredLength = 6;       // Adjust length as necessary
+    options.Password.RequireNonAlphanumeric = false; // Adjust if required
+})
+    .AddEntityFrameworkStores<TripContext>()
+    .AddDefaultTokenProviders()
+.AddDefaultUI();
 
-// Add services to the container.
+// Add session services to the service container
+builder.Services.AddDistributedMemoryCache(); // To store session data in memory
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Czas trwania sesji
+    options.Cookie.HttpOnly = true;// Cookies mog¹ byæ dostêpne tylko przez HTTP (nie w JS)
+    
+    options.Cookie.IsEssential = true; // Wa¿ne dla polityki cookies (przyjêcie zgody)
+});
+
+// Add additional services
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.AddScoped<IClientRepository,ClientRepositorycs>();
-builder.Services.AddScoped<ITripRepository,TripRepository>();
+
+// Repositories
+builder.Services.AddScoped<IClientRepository, ClientRepositorycs>();
+builder.Services.AddScoped<ITripRepository, TripRepository>();
 builder.Services.AddScoped<IReservationRepository, ReservationRepositorycs>();
-//////////// Services
+
+// Services
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ITripService, TripService>();
 builder.Services.AddScoped<IReservationService, ReservationService>();
+
 // Validators
 builder.Services.AddScoped<IValidator<ClientViewModel>, ClientValidator>();
 builder.Services.AddScoped<IValidator<TripViewModel>, TripValidator>();
 builder.Services.AddScoped<IValidator<ReservationViewModel>, ReservationValidator>();
-//serwisy do ról
 
-builder.Services.AddIdentityCore<IdentityUser>()
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<TripContext>();
-builder.Services.AddScoped<IUserStore<IdentityUser>,UserStore<IdentityUser,IdentityRole,TripContext, 
-    string, IdentityUserClaim<string>, IdentityUserRole<string>, IdentityUserLogin<string>, 
-    IdentityUserToken<string>, IdentityRoleClaim<string>>>();
-
-
-
-
-//Automapper
+// Automapper configuration
 builder.Services.AddAutoMapper(options =>
 {
     options.AddProfile<TripAutoMapper>();
 });
-//Roles
+
+// Authorization roles
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
@@ -60,18 +77,18 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Member", policy => policy.RequireRole("Member"));
 });
 
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 CreateDbIfNotExists(app);
+//Dodaje sesji
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -79,14 +96,15 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 app.MapRazorPages();
+
+await InitializeRolesAsync(app); // Ensure roles are created
 app.Run();
 
+// Create database if it does not exist
 static void CreateDbIfNotExists(IHost host)
 {
     using (var scope = host.Services.CreateScope())
@@ -103,26 +121,22 @@ static void CreateDbIfNotExists(IHost host)
             logger.LogError(ex, "An error occurred creating the DB.");
         }
     }
-    
 }
-builder.Services.Configure<IdentityOptions>(options =>
+
+// Initialize roles if not already created
+static async Task InitializeRolesAsync(IHost app)
 {
-    // Default Password settings.
-    options.Password.RequireLowercase = true;
-    options.Password.RequireDigit = true;
-});
-
-
-using (var scope = app.Services.CreateScope())
-{
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var roles = new[] { "Admin", "Manager", "Member" };
-
-    foreach (var role in roles)
+    using (var scope = app.Services.CreateScope())
     {
-        if (!await roleManager.RoleExistsAsync(role))
+        var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+        var roles = new[] { "Admin", "Manager", "Member" };
+
+        foreach (var role in roles)
         {
-            await roleManager.CreateAsync(new IdentityRole(role));
+            if (!await roleManager.RoleExistsAsync(role))
+            {
+                await roleManager.CreateAsync(new IdentityRole(role));
+            }
         }
     }
 }

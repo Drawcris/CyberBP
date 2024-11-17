@@ -6,5 +6,6 @@ namespace TripsS.Models
     {
         public DateTime? PasswordExpirationDate { get; set; }
         public DateTime? LastPasswordChangeDate { get; set; }
+        public bool MustChangePassword { get; set; }
     }
 }

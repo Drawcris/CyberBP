@@ -1,0 +1,636 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\changepasswordfirstlogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\changepasswordfirstlogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\migrations\\20241027223612_addmustchangepasswordtoapplicationuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:migrations\\20241027223612_addmustchangepasswordtoapplicationuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\migrations\\20240517075606_initialcreatee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:migrations\\20240517075606_initialcreatee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\migrations\\20240517072833_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:migrations\\20240517072833_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\migrations\\20240508103405_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:migrations\\20240508103405_createidentityschema.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\models\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:models\\aplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\repositories\\clientrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:repositories\\clientrepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\models\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:models\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:controllers\\tripscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\views\\admin\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:views\\admin\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:models\\useractivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\views\\admin\\useractivities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:views\\admin\\useractivities.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\changepasswordfirstlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\changepasswordfirstlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\tripcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:tripcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|c:\\users\\kacpe\\source\\repos\\cyberbp\\views\\admin\\useractivities.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD956C9D-60E6-4FFE-80BC-76572985E9A5}|TripsS.csproj|solutionrelative:views\\admin\\useractivities.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 273,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAYwFoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:21:17.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAuwJgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:05:44.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20241027223612_AddMustChangePasswordToApplicationUser.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20241027223612_AddMustChangePasswordToApplicationUser.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241027223612_AddMustChangePasswordToApplicationUser.Designer.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20241027223612_AddMustChangePasswordToApplicationUser.Designer.cs",
+              "RelativeToolTip": "Migrations\\20241027223612_AddMustChangePasswordToApplicationUser.Designer.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAASwE8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:02:48.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowBMAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:13:11.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAzwIcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:21:05.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChangePasswordFirstLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAmwB4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:26:28.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangePassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA8wCkAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:23:32.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClientRepositorycs.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Repositories\\ClientRepositorycs.cs",
+              "RelativeDocumentMoniker": "Repositories\\ClientRepositorycs.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Repositories\\ClientRepositorycs.cs",
+              "RelativeToolTip": "Repositories\\ClientRepositorycs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:01:32.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ChangePassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:23:22.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240517072833_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240517072833_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240517072833_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240517072833_InitialCreate.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240517072833_InitialCreate.Designer.cs",
+              "ViewState": "AQIAAFwBAAAAAAAAAAAqwHIBAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:02:44.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240508103405_CreateIdentitySchema.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240508103405_CreateIdentitySchema.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240508103405_CreateIdentitySchema.Designer.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240508103405_CreateIdentitySchema.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240508103405_CreateIdentitySchema.Designer.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAqwE8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:01:46.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240517075606_InitialCreatee.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240517075606_InitialCreatee.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240517075606_InitialCreatee.Designer.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Migrations\\20240517075606_InitialCreatee.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240517075606_InitialCreatee.Designer.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAASwE8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:02:46.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TripsController.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\TripsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TripsController.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\TripsController.cs",
+              "RelativeToolTip": "Controllers\\TripsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:01:02.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T15:04:52.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:55:33.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Controllers\\ClientsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:00:34.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAADgv0UAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:59:19.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ManageRoles.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\ManageRoles.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ManageRoles.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\ManageRoles.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ManageRoles.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:56:49.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "Models\\Reservation.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Reservation.cs",
+              "RelativeToolTip": "Models\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:56:31.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:56:28.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Trip.cs",
+              "RelativeDocumentMoniker": "Models\\Trip.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\Trip.cs",
+              "RelativeToolTip": "Models\\Trip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:56:33.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\AplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\AplicationUser.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\AplicationUser.cs",
+              "RelativeToolTip": "Models\\AplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:20:44.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:00:43.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:00:53.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:55:22.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ConfirmEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:55:18.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:55:16.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserActivity.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\UserActivity.cs",
+              "RelativeDocumentMoniker": "Models\\UserActivity.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Models\\UserActivity.cs",
+              "RelativeToolTip": "Models\\UserActivity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:15:19.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserActivities.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\UserActivities.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\UserActivities.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\UserActivities.cshtml",
+              "RelativeToolTip": "Views\\Admin\\UserActivities.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:15:34.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CreateUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:15:59.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:48:59.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ChangePasswordFirstLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ChangePasswordFirstLogin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:26:19.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T14:30:16.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TripContext.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\TripContext.cs",
+              "RelativeDocumentMoniker": "TripContext.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\TripContext.cs",
+              "RelativeToolTip": "TripContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:28:23.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserActivities.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\UserActivities.cshtml.cs",
+              "RelativeDocumentMoniker": "Views\\Admin\\UserActivities.cshtml.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Views\\Admin\\UserActivities.cshtml.cs",
+              "RelativeToolTip": "Views\\Admin\\UserActivities.cshtml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:15:45.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\kacpe\\source\\repos\\CyberBP\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:14:41.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

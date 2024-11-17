@@ -21,16 +21,17 @@ namespace TripsS.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<LoginModel> _logger;
         private readonly Trips.TripContext _context;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger, Trips.TripContext context)
+        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, Trips.TripContext context, UserManager<ApplicationUser> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
             _context = context;
-
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -120,25 +121,47 @@ namespace TripsS.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-
+            // Ustalamy domyślny URL, na który przekierujemy po zalogowaniu
             returnUrl ??= Url.Content("~/");
 
+            // Pobieramy dostępne metody logowania zewnętrznego (np. Google, Facebook)
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+                // Próba zalogowania się użytkownika
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+
+                // Jeśli logowanie zakończyło się sukcesem
                 if (result.Succeeded)
                 {
-                    await LogActivity(Input.Email, "User logged in");
-                    return LocalRedirect(returnUrl);
+                    var user = await _userManager.FindByEmailAsync(Input.Email);
+
+                    if (user != null)
+                    {
+                        // Zapisz dane użytkownika do sesji
+                        HttpContext.Session.SetString("UserId", user.Id);  // Zapisz ID użytkownika do sesji
+                        HttpContext.Session.SetString("UserEmail", user.Email);  // Zapisz email użytkownika do sesji
+
+                        // Jeśli użytkownik musi zmienić hasło, przekieruj na stronę zmiany hasła
+                        if (user.MustChangePassword)
+                        {
+                            return RedirectToPage("/Account/ChangePasswordFirstLogin");
+                        }
+
+                        // W przeciwnym razie przekieruj na stronę docelową (ReturnUrl)
+                        return LocalRedirect(returnUrl);
+                    }
+
                 }
+
+                // Jeśli logowanie wymaga dwóch czynników (2FA)
                 if (result.RequiresTwoFactor)
                 {
                     return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
                 }
+
+                // Jeśli konto jest zablokowane (np. po wielu nieudanych próbach logowania)
                 if (result.IsLockedOut)
                 {
                     _logger.LogWarning("User account locked out.");
@@ -146,13 +169,16 @@ namespace TripsS.Areas.Identity.Pages.Account
                 }
                 else
                 {
+                    // Jeśli nieudane logowanie, dodajemy błąd
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     return Page();
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+            // Jeśli model jest nieprawidłowy, zwróć formularz logowania
             return Page();
         }
+
+
     }
 }
