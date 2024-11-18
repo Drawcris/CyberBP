@@ -8,6 +8,7 @@ using TripsS.ViewModel;
 using Microsoft.EntityFrameworkCore;
 using Trips;
 using TripsS.Models;
+using Newtonsoft.Json;
 
 [Authorize(Roles = "Admin")]
 public class AdminController : Controller
@@ -22,6 +23,15 @@ public class AdminController : Controller
         _userManager = userManager;
         _context = context;
         _roleManager = roleManager;
+    }
+
+    private async Task<bool> VerifyReCaptcha(string token)
+    {
+        var secretKey = "6Ld1iIIqAAAAADVcp_lslotSvALm1Apnr_aRW8Y8";
+        var client = new HttpClient();
+        var response = await client.GetStringAsync($"https://www.google.com/recaptcha/api/siteverify?secret={secretKey}&response={token}");
+        dynamic result = JsonConvert.DeserializeObject(response);
+        return result.success == "true";
     }
 
     private async Task LogActivity(string userName, string actionDescription)
@@ -135,6 +145,14 @@ public async Task<IActionResult> Edit(string userId)
     [HttpPost]
     public async Task<IActionResult> Edit(EditUserViewModel model)
     {
+        // Pobierz token reCAPTCHA z formularza
+        var reCaptchaToken = Request.Form["g-recaptcha-response"];
+        if (string.IsNullOrEmpty(reCaptchaToken) || !await VerifyReCaptcha(reCaptchaToken))
+        {
+            ModelState.AddModelError(string.Empty, "Please complete the reCAPTCHA to proceed.");
+            return View(model);
+        }
+
         if (!ModelState.IsValid)
         {
             return View(model);
@@ -152,12 +170,10 @@ public async Task<IActionResult> Edit(string userId)
         var updateResult = await _userManager.UpdateAsync(user);
         if (!updateResult.Succeeded)
         {
-
             foreach (var error in updateResult.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
-
             return View(model);
         }
 

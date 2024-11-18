@@ -17,6 +17,9 @@ namespace TripsS.Areas.Identity.Pages.Account
         }
 
         [BindProperty]
+        public string? RecapatchaToken { get; set; }
+
+        [BindProperty]
         public string CurrentPassword { get; set; }
 
         [BindProperty]
@@ -31,6 +34,11 @@ namespace TripsS.Areas.Identity.Pages.Account
             {
                 ModelState.AddModelError(string.Empty, "The new password and confirmation password do not match.");
                 return Page();
+            }
+
+            if(RecapatchaToken == null)
+            {
+                ModelState.AddModelError(string.Empty, "Recaptcha token is required.");
             }
 
             var user = await _userManager.GetUserAsync(User);
