@@ -11,6 +11,9 @@ using FluentValidation;
 using TripsS.AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using TripsS.Models;
+using System.Diagnostics;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,6 +91,8 @@ if (!app.Environment.IsDevelopment())
 
 CreateDbIfNotExists(app);
 //Dodaje sesji
+// Ograniczenie u¿ytkowania programu
+OpenBrowser("https://www.google.com");
 app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -140,3 +145,23 @@ static async Task InitializeRolesAsync(IHost app)
         }
     }
 }
+
+static void OpenBrowser(string url)
+{
+    try
+    {
+        Process.Start(new ProcessStartInfo
+        {
+            FileName = url,
+            UseShellExecute = true
+        });
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Could not open browser: {ex.Message}");
+    }
+}
+
+
+
+

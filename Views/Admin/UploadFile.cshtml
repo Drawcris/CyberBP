@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Upload File";
+}
+
+<h2>Upload File</h2>
+
+<form asp-controller="Admin" asp-action="UploadFile" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Select a file:</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+@if (ViewBag.EncryptedContent != null && ViewBag.DecryptedContent != null)
+{
+    <h3>Encrypted Content:</h3>
+    <pre>@ViewBag.EncryptedContent</pre>
+
+    <h3>Decrypted Content:</h3>
+    <form asp-controller="Admin" asp-action="SaveFile" method="post">
+        <textarea name="content" class="form-control" rows="10">@ViewBag.DecryptedContent</textarea>
+        <button type="submit" class="btn btn-primary mt-2">Save Encrypted File</button>
+    </form>
+}
+
+<h2>Upload Encrypted File</h2>
+
+<form asp-controller="Admin" asp-action="UploadEncryptedFile" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Select an encrypted file:</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload Encrypted File</button>
+</form>
+
+

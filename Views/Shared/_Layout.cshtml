@@ -55,10 +55,6 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="Reservations" asp-action="Index"><i class="fas fa-calendar-alt"></i> Rezerwacje</a>
                     </li>
-
-                   
-
-                   
                 </ul>
 
                 <!-- Część logowania - umieszczona po prawej stronie -->
@@ -73,7 +69,7 @@
 
     <!-- Page Content -->
     <div class="container-fluid">
-        <div class="row" >
+        <div class="row">
             @if (User.IsInRole("Admin"))
             {
                 <!-- Menu boczne -->
@@ -104,19 +100,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="UserActivities">User Activities</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Admin" asp-action="UploadFile"><i class="fas fa-upload mr-2"></i>Prześlij plik</a>
+                            </li>
                             <hr class="sidebar-divider">
                             <!-- Klienci -->
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="Clients" asp-action="Index">
                                     <i class="fas fa-users mr-2"></i> Klienci
-                                    </a>
+                                </a>
                             </li>
                             <!-- Divider -->
                             <hr class="sidebar-divider">
                         </ul>
                     </div>
                 </nav>
-
 
                 <!-- Zawartość główna -->
                 <div class="col-lg-9">

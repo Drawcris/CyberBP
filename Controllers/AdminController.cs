@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Trips;
 using TripsS.Models;
 using Newtonsoft.Json;
+using System.Text;
 
 [Authorize(Roles = "Admin")]
 public class AdminController : Controller
@@ -16,6 +17,8 @@ public class AdminController : Controller
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly TripContext _context;
+    private const string EncryptionKey = "YOUR_ENCRYPTION_KEY"; // Klucz do szyfrowania
+
 
 
     public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, TripContext context)
@@ -24,6 +27,84 @@ public class AdminController : Controller
         _context = context;
         _roleManager = roleManager;
     }
+
+
+    [HttpGet]
+    public IActionResult UploadFile()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult UploadFile(IFormFile file)
+    {
+        if (file != null && file.Length > 0)
+        {
+            using (var reader = new StreamReader(file.OpenReadStream()))
+            {
+                var fileContent = reader.ReadToEnd();
+                var encryptedContent = Encrypt(fileContent, EncryptionKey);
+                var decryptedContent = Decrypt(encryptedContent, EncryptionKey);
+
+                ViewBag.EncryptedContent = encryptedContent;
+                ViewBag.DecryptedContent = decryptedContent;
+            }
+        }
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult SaveFile(string content)
+    {
+        var encryptedContent = Encrypt(content, EncryptionKey);
+        var fileName = "encrypted_file.txt";
+        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", fileName);
+
+        System.IO.File.WriteAllText(filePath, encryptedContent);
+
+        return File(System.IO.File.ReadAllBytes(filePath), "application/octet-stream", fileName);
+    }
+
+    [HttpPost]
+    public IActionResult UploadEncryptedFile(IFormFile file)
+    {
+        if (file != null && file.Length > 0)
+        {
+            using (var reader = new StreamReader(file.OpenReadStream()))
+            {
+                var encryptedContent = reader.ReadToEnd();
+                var decryptedContent = Decrypt(encryptedContent, EncryptionKey);
+
+                ViewBag.EncryptedContent = encryptedContent;
+                ViewBag.DecryptedContent = decryptedContent;
+            }
+        }
+        return View("UploadFile");
+    }
+
+    private string Encrypt(string text, string key)
+    {
+        var result = new StringBuilder();
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = (char)((text[i] + key[i % key.Length]) % 256);
+            result.Append(c);
+        }
+        return result.ToString();
+    }
+
+    private string Decrypt(string text, string key)
+    {
+        var result = new StringBuilder();
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = (char)((text[i] - key[i % key.Length] + 256) % 256);
+            result.Append(c);
+        }
+        return result.ToString();
+    }
+
+
 
     private async Task<bool> VerifyReCaptcha(string token)
     {
